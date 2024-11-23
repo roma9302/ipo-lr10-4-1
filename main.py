@@ -28,7 +28,7 @@ for atr in authors:
 for i in range(len(list_quotes)):
     print(f"{i + 1}. Quote: {list_quotes[i]}; Author: {list_author[i]};")
     
-with open(file_json, "w", encoding='utf-8') as file:
+with open(file_json, "w+", encoding='utf-8') as file:
     for i in range(len(list_quotes)):   
         writer = {'Quote': list_quotes[i], 'Author': list_author[i]}
         writer_list.append(writer)
